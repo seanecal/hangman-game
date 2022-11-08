@@ -8,7 +8,7 @@ function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
     return words[Math.floor(Math.random() * words.length)]
   })
-  const [guessedLetters, setGuessedLetters] = useState(<string[]>([]))
+  // const [guessedLetters, setGuessedLetters] = useState(<string[]>([]))
   return <div
     style={{
       maxWidth: "800px",
