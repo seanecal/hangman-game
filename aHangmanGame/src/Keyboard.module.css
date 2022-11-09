@@ -1,0 +1,15 @@
+.btn {
+  width: 80px;
+  font-weight: bold;
+  font-size: 3rem;
+  gap: 0.5em;
+  margin: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn:hover {
+  color: orange;
+  background-color: ghostwhite;
+  box-shadow: 4px 2px;
+}
