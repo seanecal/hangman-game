@@ -7,7 +7,7 @@ export function Keyboard() {
     <div>
       {KEYS.map(key => {
         return(
-          <button className={styles.btn} key={key}>
+          <button className={`${styles.btn}`} key={key}>
             {key.toUpperCase()}
           </button>
         )
