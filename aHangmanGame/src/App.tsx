@@ -26,7 +26,7 @@ function App() {
        Lose Win
       </div>
       <HangmanDrawing numberOfWrongGuesses = { incorrectLetters.length }/>
-      <HangmanWord />
+      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess}/>
       <Keyboard />
   </div>
 }
