@@ -48,8 +48,11 @@ function App() {
        Lose Win
       </div>
       <HangmanDrawing numberOfWrongGuesses = { incorrectLetters.length }/>
-      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess}/>
-      <Keyboard />
+      <HangmanWord guessedLetters = {guessedLetters} wordToGuess={wordToGuess}/>
+      <Keyboard activeLetters = {guessedLetters.filter(letter => wordToGuess.includes(letter))}
+      inactiveLetters = {incorrectLetters}
+      addGuessedLetter = {addGuessedLetter}
+      />
   </div>
 }
 
