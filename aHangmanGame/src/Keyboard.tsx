@@ -15,7 +15,7 @@ export function Keyboard({ activeLetters, inactiveLetters, addGuessedLetter }: K
         const isActive = activeLetters.includes(key)
         const notActive = inactiveLetters.includes(key)
         return(
-          <button onClick={()=> addGuessedLetter(key)} className={`${styles.btn} ${isActive ? styles.active : ""} ${notActive ? styles.inactive : ""}`} key={key}>
+          <button onClick={()=> addGuessedLetter(key)} className={`${styles.btn} ${isActive ? styles.active : ""} ${notActive ? styles.inactive : ""}`} disabled={isActive || notActive} key={key}>
             {key.toUpperCase()}
           </button>
         )
