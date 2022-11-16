@@ -30,7 +30,6 @@ function App() {
       if (!key.match(/^[a-z]$/)) return
 
       e.preventDefault()
-      setGuessedLetters([])
       addGuessedLetter(key)
     }
 
@@ -46,6 +45,7 @@ function App() {
       if (key !== "Enter") return
 
       e.preventDefault
+      setGuessedLetters([])
       setWordToGuess(getWord())
     }
 
