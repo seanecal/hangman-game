@@ -30,6 +30,7 @@ function App() {
       if (!key.match(/^[a-z]$/)) return
 
       e.preventDefault()
+      setGuessedLetters([])
       addGuessedLetter(key)
     }
 
